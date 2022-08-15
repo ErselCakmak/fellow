@@ -53,7 +53,7 @@ AnimatedOpacity(
 );
 ```
 
-### Widget Extension
+###### Widget Extension
 
 Sometimes you want to manage visibility of widget. So you can use this extensions.
 
