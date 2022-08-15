@@ -4,10 +4,11 @@ This project was created for extension uses.
 
 ## Context Extensions
 
-### Navigator Extension
+###### Navigator Extension
 
 These directly access navigation features.
 
+<sub>
 Column(
   children: [
     ElevatedButton(
@@ -39,8 +40,8 @@ Column(
     ),
   ],
 );
-
-### Duration Extension 
+</sub>
+###### Duration Extension 
 
 These extensions mainly for animation use.
 
