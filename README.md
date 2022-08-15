@@ -8,7 +8,7 @@ This project was created for extension uses.
 
 These directly access navigation features.
 
-<sub>
+```
 Column(
   children: [
     ElevatedButton(
@@ -40,20 +40,24 @@ Column(
     ),
   ],
 );
-</sub>
+```
+
 ###### Duration Extension 
 
 These extensions mainly for animation use.
 
+```
 AnimatedOpacity(
   duration: context.durationLow,
   child: Text('${context.durationLow}'),
 );
-
+```
 
 ### Widget Extension
 
 Sometimes you want to manage visibility of widget. So you can use this extensions.
 
+```
 Text("Hello").toVisible(true);
 Text("Hello").toDisabled(true);
+```
