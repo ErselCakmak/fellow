@@ -20,11 +20,15 @@ extension NavigationExtension on BuildContext {
     return await navigation.pushNamed<T>(path, arguments: data);
   }
 
-  Future<T?> navAndRemove<T>(String path, {Object? data}) async {
+  Future<T?> navNameAndRemove<T>(String path, {Object? data}) async {
     return await navigation.pushNamedAndRemoveUntil(path, (route) => false, arguments: data);
   }
 
   Future<T?> navToPage<T>(Widget page, {Object? extra, SlideType type = SlideType.DEFAULT}) async {
     return await navigation.push<T>(type.route(page, RouteSettings(arguments: extra)));
+  }
+
+  Future<T?> navAndRemove<T>(Route<T> page) async {
+    return await navigation.pushAndRemoveUntil(page, (Route<dynamic> route) => false);
   }
 }
