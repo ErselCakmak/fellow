@@ -28,7 +28,7 @@ extension NavigationExtension on BuildContext {
     return await navigation.push<T>(type.route(page, RouteSettings(arguments: extra)));
   }
 
-  Future<T?> navAndRemove<T>(Route<T> page) async {
-    return await navigation.pushAndRemoveUntil(page, (Route<dynamic> route) => false);
+  Future<T?> navAndRemove<T>(Widget page) async {
+    return await navigation.pushAndRemoveUntil(MaterialPageRoute(builder: (context) => page), (Route<dynamic> route) => false);
   }
 }
