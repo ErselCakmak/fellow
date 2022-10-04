@@ -30,13 +30,13 @@ Column(
           // ...
         }
       },
-      child: Text('Navigation Named'),
+      child: Text('Navigation to Widget'),
     ),
     ElevatedButton(
       onPressed: () {
-        context.navAndRemove('/hello');
+        context.navAndRemove(Widget(), type: SlideType.RIGHT);
       },
-      child: Text('Navigation Named and Remove'),
+      child: Text('Navigation to Widget and Remove Back'),
     ),
   ],
 );
@@ -55,7 +55,7 @@ AnimatedOpacity(
 
 ###### Widget Extension
 
-Sometimes you want to manage visibility of widget. So you can use this extensions.
+Visible widget. Easy to use.
 
 ```
 Text("Hello").toVisible(true);
