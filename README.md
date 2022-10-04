@@ -55,7 +55,7 @@ AnimatedOpacity(
 
 ###### Widget Extension
 
-Visible widget. Easy to use.
+Visible/Disable widget. Easy to use.
 
 ```
 Text("Hello").toVisible(true);
